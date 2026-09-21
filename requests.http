@@ -1,0 +1,35 @@
+POST http://localhost:8080/courses
+Content-Type: application/json
+
+{
+  "name": "Mathematik",
+  "professor": "Dr. Schmidt"
+}
+###
+POST http://localhost:8080/deadlines?courseId=2
+Content-Type: application/json
+
+{
+  "title": "Hausübung 1",
+  "dueDate": "2026-10-15",
+  "completed": false
+}
+
+
+###
+GET http://localhost:8080/courses
+
+
+###
+
+PUT http://localhost:8080/courses/1
+Content-Type: application/json
+
+{
+  "name": "Mathematik II",
+  "professor": "Dr. Müller"
+}
+
+###
+
+DELETE http://localhost:8080/courses/1
