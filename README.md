@@ -6,7 +6,7 @@ A RESTful backend API built with Spring Boot for managing university courses and
 - Java 25
 - Spring Boot 3.5
 - Spring Data JPA
-- H2 In-Memory Database
+- PostgreSQL 15
 - Maven
 
 ## Features
@@ -33,6 +33,7 @@ A RESTful backend API built with Spring Boot for managing university courses and
 | DELETE | /deadlines/{id} | Delete a deadline |
 
 ## Running the Project
+0. Install and start PostgreSQL, create a database named `studentplanner`
 1. Clone the repo
 2. Open in IntelliJ IDEA
 3. Run `StudentplannerApplication.java`
